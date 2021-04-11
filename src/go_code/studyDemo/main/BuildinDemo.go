@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 
 	num1 := 100
 	fmt.Printf("num1的类型是%T, num1的值是%v, num1的地址是%v \n", num1, num1, &num1)

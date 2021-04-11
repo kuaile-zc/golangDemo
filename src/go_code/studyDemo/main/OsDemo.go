@@ -1,10 +1,11 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
-func main()  {
+
+func main() {
 	s, sep := "", ""
 	for _, arg := range os.Args[1:] {
 		s += sep + arg

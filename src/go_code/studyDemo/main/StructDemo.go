@@ -1,43 +1,41 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 type Cat struct {
-	Name string
-	Age int
-	Color string
-	Hobby string
+	Name    string
+	Age     int
+	Color   string
+	Hobby   string
 	Partner []string
-	Food map[string]string
+	Food    map[string]string
 }
 
 func (cat Cat) eat() {
-	fmt.Printf("The %v will eat... \n",cat.Name)
+	fmt.Printf("The %v will eat... \n", cat.Name)
 }
 
 type Person struct {
 	Name string `json:"name"`
-	Age int `json:"age"`
+	Age  int    `json:"age"`
 }
 
-
 type MethodUtils struct {
-
 }
 
 func (mu MethodUtils) Print() {
 	for i := 0; i <= 10; i++ {
-		for j := 0; j <= 8; j++  {
+		for j := 0; j <= 8; j++ {
 			fmt.Print("*")
 		}
 		fmt.Println()
 	}
 }
 
-func main()  {
+func main() {
 
 	var cat01 Cat
 	cat01.Name = "Sam"
@@ -52,10 +50,9 @@ func main()  {
 	cat01.Food["meat"] = "Like"
 	cat01.Food["rice"] = "Hate"
 
-	fmt.Println("This Cat is ",cat01)
+	fmt.Println("This Cat is ", cat01)
 
 	cat01.eat()
-
 
 	//定义结构体，方式一
 	var person Person
@@ -91,7 +88,6 @@ func main()  {
 	}
 
 	fmt.Println("JsonStr", string(jsonStr))
-
 
 	//打印矩阵
 	var mu MethodUtils

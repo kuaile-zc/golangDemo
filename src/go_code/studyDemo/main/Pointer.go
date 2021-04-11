@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	//TBasic data structure layout in memory.
-	var i int = 10;
+	var i int = 10
 
 	fmt.Println("i 的地址=", &i)
 

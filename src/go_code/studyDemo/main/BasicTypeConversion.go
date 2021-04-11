@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func main()  {
+func main() {
 
 	var i int32 = 100
 	//Change the int 32 to float32
@@ -16,10 +16,10 @@ func main()  {
 
 	var i3 int64 = int64(i)
 
-	fmt.Printf("i=%v  n1=%v  i2=%v  i3=%v",i, n1,i2,i3)
+	fmt.Printf("i=%v  n1=%v  i2=%v  i3=%v", i, n1, i2, i3)
 
 	fmt.Println()
-	fmt.Printf(" i type is %T",i)
+	fmt.Printf(" i type is %T", i)
 	fmt.Println()
 
 	var num1 int = 123
@@ -45,7 +45,6 @@ func main()  {
 	str = fmt.Sprintf("%c", myChar)
 	fmt.Printf("str type is %T str=%v\n", str, str)
 
-
 	//The second way that other type is converted to string.
 	var num3 int = 412
 	var num4 float32 = 1.32
@@ -54,12 +53,11 @@ func main()  {
 	str = strconv.FormatInt(int64(num3), 10)
 	fmt.Printf("str type is %T str=%v\n", str, str)
 
-	str = strconv.FormatFloat(float64(num4), 'f',10, 64)
+	str = strconv.FormatFloat(float64(num4), 'f', 10, 64)
 	fmt.Printf("str type is %T str=%v\n", str, str)
 
 	str = strconv.FormatBool(b2)
 	fmt.Printf("str type is %T str=%v\n", str, str)
-
 
 	//The string converted other type.
 	var strBool string = "true"
@@ -82,6 +80,5 @@ func main()  {
 
 	f1, _ = strconv.ParseFloat(strFloat, 64)
 	fmt.Printf("f1 type %T f1=%v \n", f1, f1)
-
 
 }

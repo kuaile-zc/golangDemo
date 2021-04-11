@@ -18,7 +18,7 @@ func makeSuffix(suffix string) func(name string) string {
 	return func(name string) string {
 		if !strings.HasSuffix(name, suffix) {
 			strs := strings.Split(name, ".")
-			if len(strs) > 1{
+			if len(strs) > 1 {
 				name = strs[0]
 			}
 			return name + suffix
@@ -27,14 +27,13 @@ func makeSuffix(suffix string) func(name string) string {
 	}
 }
 
-func main()  {
-	f := AddUpper();
+func main() {
+	f := AddUpper()
 
 	fmt.Println(f(4))
 	fmt.Println(f(10))
 
-
 	f2 := makeSuffix(".jpg")
-	fmt.Println("After file name was deal ",f2("winter"))
-	fmt.Println("After file name was deal ",f2("person.avi"))
+	fmt.Println("After file name was deal ", f2("winter"))
+	fmt.Println("After file name was deal ", f2("person.avi"))
 }

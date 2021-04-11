@@ -5,8 +5,8 @@ import "fmt"
 /**
   This is an arithmetic method.
 
- */
-func BasicOperation(a int, b int, operation byte) float64{
+*/
+func BasicOperation(a int, b int, operation byte) float64 {
 	var ret float64
 
 	switch operation {

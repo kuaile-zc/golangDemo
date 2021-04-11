@@ -1,17 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
-	"fmt"
 )
 
-func main(){
+func main() {
 
 	var count int = 0
 
-	for  {
-		rand.Seed(time.Now().UnixNano()+ int64(count))
+	for {
+		rand.Seed(time.Now().UnixNano() + int64(count))
 		n := rand.Intn(100) + 1
 		fmt.Println("n=", n)
 		count++
