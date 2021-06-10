@@ -1,10 +1,6 @@
-package main
+package leetcode
 
-func main() {
-	println(findMaxLength([]int{0, 1, 0}))
-}
-
-func findMaxLength(nums []int) (maxLength int) {
+func FindMaxLength(nums []int) (maxLength int) {
 	mp := map[int]int{0: -1}
 	counter := 0
 	for i, num := range nums{
